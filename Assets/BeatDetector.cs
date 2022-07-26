@@ -16,7 +16,9 @@ namespace JCTools
         {
             public bool active = true;
             public bool automaticDetection = true;
+            [Tooltip("Index of the bar that this beat tracks, each bar is assigned a frequency range. It goes from left to right, low to high frequency")]
             public int bandIndex = 0;
+            [Tooltip("Amplitude at which a beat is triggered")]
             public float beatThreshold = 1f;
             public bool beatSwitch = false;
         }
